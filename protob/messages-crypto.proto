@@ -125,3 +125,11 @@ message CosiSign {
 message CosiSignature {
     optional bytes signature = 1;   // Signature
 }
+
+message TestOnlyRequest {
+    optional bytes arg1 = 1;
+}
+
+message TestOnlyResponse {
+    optional bytes arg1 = 1;
+}
