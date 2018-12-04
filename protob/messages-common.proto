@@ -141,3 +141,10 @@ message HDNodeType {
     optional bytes private_key = 5;
     optional bytes public_key = 6;
 }
+
+/**
+ * May be returned by some responses (only for benchmarking purposes)
+ */
+message BenchmarkResult {
+    repeated uint32 result = 1;     // Custom measurements done on the device.
+}
