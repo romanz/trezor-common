@@ -90,6 +90,8 @@ enum MessageType {
     MessageType_CosiCommitment = 72 [(wire_out) = true];
     MessageType_CosiSign = 73 [(wire_in) = true];
     MessageType_CosiSignature = 74 [(wire_out) = true];
+    MessageType_TestOnlyRequest = 81 [(wire_in) = true];
+    MessageType_TestOnlyResponse = 82 [(wire_out) = true];
 
     // Debug
     MessageType_DebugLinkDecision = 100 [(wire_debug_in) = true, (wire_tiny) = true, (wire_no_fsm) = true];
