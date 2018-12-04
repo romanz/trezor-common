@@ -102,6 +102,7 @@ message SignMessage {
 message MessageSignature {
     optional string address = 1;    // address used to sign the message
     optional bytes signature = 2;   // signature of the message
+    optional hw.trezor.messages.common.BenchmarkResult benchmark = 3;
 }
 
 /**
