@@ -245,4 +245,8 @@ enum MessageType {
     MessageType_EosTxActionRequest = 603 [(wire_out) = true];
     MessageType_EosTxActionAck = 604 [(wire_in) = true];
     MessageType_EosSignedTx = 605 [(wire_out) = true];
+
+    // Liquid
+    MessageType_LiquidGetPublicKey = 801 [(wire_in) = true];
+    MessageType_LiquidPublicKey = 802 [(wire_out) = true];
 }
